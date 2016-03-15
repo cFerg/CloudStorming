@@ -11,6 +11,10 @@ public class Cosecant {
         this.cosecant = (h.hypotenuse / o.opposite);
     }
     
+    public Cosecant(Arccosecant arccos){
+        this.cosecant = (1 / arccos.arccosecant);
+    }
+    
     public Cosecant(Sine sin){
         this.cosecant = (1 / sin.sine);
     }

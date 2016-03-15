@@ -11,6 +11,10 @@ public class Cotangent {
         this.cotangent = (a.adjacent / o.opposite);
     }
     
+    public Cotangent(Arccotangent arccot){
+        this.cotangent = (1 / arccot.arccotangent);
+    }
+    
     public Cotangent(Tangent tan){
         this.cotangent = (1 / tan.tangent);
     }

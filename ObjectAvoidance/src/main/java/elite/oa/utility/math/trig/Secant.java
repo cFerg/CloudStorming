@@ -11,6 +11,10 @@ public class Secant {
         this.secant = (h.hypotenuse / a.adjacent);
     }
     
+    public Secant(Arcsecant arcsec){
+        this.secant = (1 / arcsec.arcsecant);
+    }
+    
     public Secant(Cosine cos){
         this.secant = (1 / cos.cosine);
     }

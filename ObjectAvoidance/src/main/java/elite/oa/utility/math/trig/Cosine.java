@@ -11,6 +11,10 @@ public class Cosine {
         this.cosine = (a.adjacent / h.hypotenuse);
     }
     
+    public Cosine(Arccosine arccos){
+        this.cosine = (1 / arccos.arccosine);
+    }
+    
     public Cosine(Secant sec){
         this.cosine = (1 / sec.secant);
     }

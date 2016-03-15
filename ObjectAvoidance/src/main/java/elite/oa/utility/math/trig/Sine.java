@@ -11,11 +11,19 @@ public class Sine {
         this.sine = (o.opposite / h.hypotenuse);
     }
     
+    public Sine(Arcsine arcsin){
+        this.sine = (1 / arcsin.arcsine);
+    }
+    
     public Sine(Cosecant csc){
         this.sine = (1 / csc.cosecant);
     }
     
     public Cosecant toCosecant(){
         return new Cosecant(this);
+    }
+    
+    public Arcsine toArcsine(){
+        return new Arcsine(this);
     }
 }
