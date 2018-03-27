@@ -1,0 +1,3 @@
+package elite.gils
+
+class GlobalInternetLocationSystem
